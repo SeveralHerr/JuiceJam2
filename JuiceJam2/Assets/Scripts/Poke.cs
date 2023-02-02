@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class Poke : MonoBehaviour {
-
+    public Gameover _Gameover;
 // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +17,8 @@ public class Poke : MonoBehaviour {
         if(Input.GetMouseButtonDown(0)) 
         {
             // move the bear to the right
-
+            _Gameover.targetTime = 20;
             ScoreHandler.Instance.AddScore(1);
-            Debug.Log(ScoreHandler.Instance.Score);
         }
     }
 }

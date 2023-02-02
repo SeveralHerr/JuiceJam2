@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-IntegrationTests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-IntegrationTests-Editor", "Zenject-IntegrationTests-Editor.csproj", "{53967435-78A9-D431-5278-C154FD0523BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniRx.Examples", "UniRx.Examples.csproj", "{410A3B33-5D48-8031-5983-045EEC50DA7C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{A6FB1592-75F5-D418-612B-98E1017451CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniRx.Examples", "UniRx.Examples.csproj", "{410A3B33-5D48-8031-5983-045EEC50DA7C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zenject-PoolMonitor-Editor", "Zenject-PoolMonitor-Editor.csproj", "{60D31DA0-9F96-5D3B-C370-365EA64D01CC}"
 EndProject
@@ -45,14 +45,14 @@ Global
 		{53967435-78A9-D431-5278-C154FD0523BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53967435-78A9-D431-5278-C154FD0523BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53967435-78A9-D431-5278-C154FD0523BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6FB1592-75F5-D418-612B-98E1017451CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6FB1592-75F5-D418-612B-98E1017451CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6FB1592-75F5-D418-612B-98E1017451CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6FB1592-75F5-D418-612B-98E1017451CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410A3B33-5D48-8031-5983-045EEC50DA7C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60D31DA0-9F96-5D3B-C370-365EA64D01CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60D31DA0-9F96-5D3B-C370-365EA64D01CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60D31DA0-9F96-5D3B-C370-365EA64D01CC}.Release|Any CPU.ActiveCfg = Release|Any CPU

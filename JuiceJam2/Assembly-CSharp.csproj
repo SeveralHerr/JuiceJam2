@@ -56,10 +56,12 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Poke.cs" />
-    <Compile Include="Assets\Scripts\ScoreHandler.cs" />
     <Compile Include="Assets\Scripts\SingletonMonobehavior.cs" />
     <Compile Include="Assets\Scripts\Scoreboard.cs" />
+    <Compile Include="Assets\Scripts\ScoreHandler.cs" />
+    <Compile Include="Assets\Scripts\Poke.cs" />
+    <Compile Include="Assets\Scripts\Gameover.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
