@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Poke.cs" />
     <Compile Include="Assets\Scripts\Gameover.cs" />
     <Compile Include="Assets\Scripts\Start.cs" />
+    <Compile Include="Assets\Scripts\Eyes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

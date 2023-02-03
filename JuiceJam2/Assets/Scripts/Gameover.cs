@@ -21,7 +21,7 @@ public class Gameover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BiteCount = _random.Next(1, 20);
+        BiteCount = _random.Next(1, 50);
     }
 
     // Update is called once per frame

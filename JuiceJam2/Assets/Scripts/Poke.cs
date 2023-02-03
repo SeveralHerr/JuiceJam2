@@ -7,6 +7,8 @@ public class Poke : MonoBehaviour
 {
     public Gameover _Gameover;
 
+    public Eyes Eyes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,14 @@ public class Poke : MonoBehaviour
         {
             // move the bear to the right
             _Gameover.targetTime = 20;
-            ScoreHandler.Instance.AddScore(1);
+            if (Eyes.EyeAction == EyeBehavior.LeftEye || Eyes.EyeAction == EyeBehavior.RightEye)
+            {
+                ScoreHandler.Instance.AddScore(1);
+            }
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Death");
+            }
         }
     }
 }
