@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class Poke : MonoBehaviour {
+public class Poke : MonoBehaviour 
+{
     public Gameover _Gameover;
-// Start is called before the first frame update
+
+    // Start is called before the first frame update
     void Start()
     {
         

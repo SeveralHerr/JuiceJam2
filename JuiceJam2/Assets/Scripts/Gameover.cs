@@ -37,21 +37,18 @@ public class Gameover : MonoBehaviour
 
         if (ScoreHandler.Instance.Score >= BiteCount)
         {
-            Debug.Log("I quit");
-            Application.Quit();
-            
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Death");
+
         }
     }
+
     void timerEnded()
     {
         WaitTime -= 1;
 
-        Debug.Log(WaitTime);
-
         if (WaitTime <= 0)
         {
-            Debug.Log("I quit on time.");
-            Application.Quit();
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Death");
         }
     }
 }
