@@ -44,12 +44,11 @@ public class Eyes : MonoBehaviour
 
     private void SetTimeBetweenEyeMovements()
     { 
-        timeBetweenEyeMovements = Random.Range(0.5f, 2);
+        timeBetweenEyeMovements = Random.Range(0.5f, 1.5f);
     }
     
     private void SetEyeBehavior()
     {
-        var test = new System.Random().Next(0, 3);
         EyeAction = (EyeBehavior)Random.Range(0, 3);
 
         switch (EyeAction)
