@@ -14,9 +14,12 @@ public class Poke : MonoBehaviour
     public Animator Animator;
     public SpriteRenderer Bite;
 
-    public Eyes Eyes;
+    public Heads Heads;
 
     public Animator BiteAnimator;
+
+    public float clickRateLimit = 0.2f;
+    private float lastClickTime;
 
 
     // Update is called once per frame
@@ -29,7 +32,15 @@ public class Poke : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (Time.time - lastClickTime < clickRateLimit)
+            {
+                Debug.Log("Too fast! Limiting clicks...");
+                return;
+            }
+            lastClickTime = Time.time;
+
             Animator.Play("Poke");
+            //Stick.SetMove();
         }
     }
 
@@ -38,7 +49,7 @@ public class Poke : MonoBehaviour
     {
         _Gameover.targetTime = 20;
         pokeSound.Play();
-        if (Eyes.EyeAction == EyeBehavior.LeftEye || Eyes.EyeAction == EyeBehavior.RightEye)
+        if (Heads.HeadAction == HeadBehavior.LeftHead || Heads.HeadAction == HeadBehavior.RightHead)
         {
             ScoreHandler.Instance.AddScore(1);
             Animator.Play("Unpoke");

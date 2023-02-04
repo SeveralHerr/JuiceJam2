@@ -19,18 +19,20 @@ public class Gameover : MonoBehaviour
     private Random _random => new Random();
 
     [SerializeField]
-    private int BiteCount;
+    private int MaxPokeCount;
     public SpriteRenderer Bite;
 
     [SerializeField]
     internal int WaitTime = 20;
+
+    public Heads Heads;
 
 
     // Start is called before the first frame update
     void Start()
     {
         WaitTime = 20;
-        BiteCount = _random.Next(1, 50);
+        MaxPokeCount = _random.Next(1, 50);
     }
 
     // Update is called once per frame
@@ -49,10 +51,15 @@ public class Gameover : MonoBehaviour
         }
        
 
-        if (ScoreHandler.Instance.Score >= BiteCount)
+        if (ScoreHandler.Instance.Score >= MaxPokeCount)
         {
             biteSound.Play();
             GetBit();
+        }
+
+        if(ScoreHandler.Instance.Score >= MaxPokeCount * 0.5f )
+        {
+            Heads.SetAngry();
         }
     }
 
