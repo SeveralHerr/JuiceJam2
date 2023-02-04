@@ -17,6 +17,11 @@ public class Stick : MonoBehaviour
 
     void Update()
     {
+        if (!IsGameRunning.Instance.isRunning)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             move = true;

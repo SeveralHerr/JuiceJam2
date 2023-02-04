@@ -25,19 +25,22 @@ public class Gameover : MonoBehaviour
     [SerializeField]
     internal int WaitTime = 20;
 
-    [SerializeField]
-    internal BiteBehavior BiteAction;
-
 
     // Start is called before the first frame update
     void Start()
     {
+        WaitTime = 20;
         BiteCount = _random.Next(1, 50);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!IsGameRunning.Instance.isRunning)
+        {
+            return;
+        }
+
         targetTime -= Time.deltaTime;
 
         if (targetTime <= 0.0f)
@@ -50,8 +53,6 @@ public class Gameover : MonoBehaviour
         {
             biteSound.Play();
             GetBit();
-         //  StartCoroutine(WaitForSound());
-
         }
     }
 
@@ -63,38 +64,19 @@ public class Gameover : MonoBehaviour
         {
             biteSound.Play();
             GetBit();
-            
+
+            WaitTime = 4423;
         }
     }
-
-    //IEnumerator WaitForSound()
-    //{
-    //    yield return new WaitWhile(() => biteSound.isPlaying);
-    //    UnityEngine.SceneManagement.SceneManager.LoadScene("Death");
-    //}
 
     public void GetBit()
     {
         Bite.enabled = true;
         BiteAnimator.Play("Bite");
-
     }
 
     public void DisableBiteAnimation()
     {
-        //StartCoroutine(WaitForSound());
         Bite.enabled = false;
-    }
-
-    internal enum BiteBehavior
-    {
-        NoBite,
-        Bite
-    }
-
-
-    public void Death()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Death");
     }
 }

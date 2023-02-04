@@ -15,11 +15,6 @@ public class Timer : ITimer
 
     public void RunTimer(float length, Action action)
     {
-        //if (TimeRemaining == 0)
-        //{
-        //    TimeRemaining = length;
-        //}
-
         TimeRemaining -= Time.deltaTime;
         if (TimeRemaining <= 0)
         {

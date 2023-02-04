@@ -28,6 +28,11 @@ public class Eyes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsGameRunning.Instance.isRunning)
+        {
+            return;
+        }
+
         timeBetweenEyeMovements -= Time.deltaTime;
 
         if (timeBetweenEyeMovements <= 0.0f)
