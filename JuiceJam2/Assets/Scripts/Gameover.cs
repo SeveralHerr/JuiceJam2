@@ -32,7 +32,7 @@ public class Gameover : MonoBehaviour
     void Start()
     {
         WaitTime = 20;
-        MaxPokeCount = _random.Next(1, 50);
+        MaxPokeCount = _random.Next(10, 50);
     }
 
     // Update is called once per frame
